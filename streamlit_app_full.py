@@ -444,7 +444,7 @@ def main():
                         
                         # 現在のフレーム位置をマーク
                         if st.session_state.current_frame < len(st.session_state.angles_data):
-                            fig.add_vline(x=st.session_state.current_frame, line_dash="dash", color="blue", 
+                            fig.add_vline(x=st.session_state.current_frame, line_dash="dash", line_color="blue", 
                                          annotation_text=f"現在: {st.session_state.angles_data[st.session_state.current_frame]:.1f}°")
                         
                         st.plotly_chart(fig, use_container_width=True)
@@ -551,7 +551,7 @@ def main():
                 
                 # 現在のフレーム位置をマーク
                 if st.session_state.current_frame < len(st.session_state.angles_data):
-                    fig.add_vline(x=st.session_state.current_frame, line_dash="dash", color="blue", 
+                    fig.add_vline(x=st.session_state.current_frame, line_dash="dash", line_color="blue", 
                                  annotation_text=f"現在: {st.session_state.angles_data[st.session_state.current_frame]:.1f}°")
                 
                 st.plotly_chart(fig, use_container_width=True)
@@ -640,7 +640,7 @@ def main():
         3. 動画プレイヤーで再生制御
         4. 結果の確認とフィードバック
         
-        ### 🆕 新機能
+        ### 🆕 機能
         - **フレーム選択スライダー**: 任意のフレームにジャンプ
         - **リアルタイム角度表示**: 現在のフレームの角度を表示
         - **グラフ上のマーカー**: 現在位置を視覚的に表示
